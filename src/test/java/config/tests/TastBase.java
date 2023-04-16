@@ -1,8 +1,8 @@
-package tests;
+package config.tests;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
-import drivers.BrowserstackMobileDriver;
+import config.drivers.BrowserstackMobileDriver;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -14,7 +14,7 @@ import static com.codeborne.selenide.Selenide.open;
 public class TastBase {
 
     @BeforeAll
-    static void beforeAll () {
+    static void beforeAll() {
         Configuration.browser = BrowserstackMobileDriver.class.getName();
         Configuration.browserSize = null;
     }
@@ -26,9 +26,7 @@ public class TastBase {
     }
 
     @AfterEach
-    void afterEach () {
-
-
+    void afterEach() {
         closeWebDriver();
     }
 }
