@@ -41,13 +41,13 @@ dependencies {
             "io.appium:java-client:8.3.0",
             "io.rest-assured:rest-assured:5.3.0",
             "io.qameta.allure:allure-rest-assured:2.21.0",
-            "org.aeonbits.owner:owner:1.0.4",
+            "org.aeonbits.owner:owner:1.0.12",  // 1.0.4
             "io.qameta.allure:allure-selenide:2.21.0"
     )
 }
 
 test {
     useJUnitPlatform()
-          //  ./gradlew clean test -DosVersion=9.0 -Ddevice=Google Pixel 3
+          //  ./gradlew clean test
     systemProperties(System.getProperties())
 }
