@@ -1,8 +1,8 @@
-package config.drivers;
+package drivers;
 
 import com.codeborne.selenide.WebDriverProvider;
 
-import config.properties.DriverConfig;
+import config.DriverConfig;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.MutableCapabilities;
@@ -42,7 +42,7 @@ public class BrowserstackMobileDriver implements WebDriverProvider {
 
         // Set other BrowserStack capabilities
         mutableCapabilities.setCapability("project", "First Java Project");
-        mutableCapabilities.setCapability("build", "config.tests.config.tests.config.tests.browserstack-build-1");
+        mutableCapabilities.setCapability("build", "tests.tests.tests.browserstack-build-1");
         mutableCapabilities.setCapability("name", "first_test");
 
         // Initialise the remote Webdriver using BrowserStack remote URL

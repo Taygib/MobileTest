@@ -1,7 +1,7 @@
-package config.helpers;
+package helpers;
 
 
-import static config.helpers.CustomAllureListener.withCustomTemplates;
+import static helpers.CustomAllureListener.withCustomTemplates;
 import static io.restassured.RestAssured.given;
 import static java.lang.String.format;
 public class Browserstack {

@@ -1,4 +1,4 @@
-package config.properties;
+package config;
 
 public class SystemPropertiesMobileTest {
 

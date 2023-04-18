@@ -1,4 +1,4 @@
-package config.tests.browserstack;
+//package tests.browserstack;
 
 //import io.appium.java_client.MobileBy;
 //import io.appium.java_client.android.AndroidDriver;
@@ -21,8 +21,8 @@ package config.tests.browserstack;
 //        DesiredCapabilities caps = new DesiredCapabilities();
 //
 //        // Set your access credentials
-//        caps.setCapability("config.tests.config.tests.config.tests.browserstack.user", "qaguruqaguru_cWEn5u");
-//        caps.setCapability("config.tests.config.tests.config.tests.browserstack.key", "JrvHcugRGP42jAPdVsop");
+//        caps.setCapability("tests.tests.tests.browserstack.user", "qaguruqaguru_cWEn5u");
+//        caps.setCapability("tests.tests.tests.browserstack.key", "JrvHcugRGP42jAPdVsop");
 //
 //        // Set URL of the application under test
 //        caps.setCapability("app", "bs://c700ce60cf13ae8ed97705a55b8e022f13c5827c");
@@ -33,7 +33,7 @@ package config.tests.browserstack;
 //
 //        // Set other BrowserStack capabilities
 //        caps.setCapability("project", "First Java Project");
-//        caps.setCapability("build", "config.tests.config.tests.config.tests.browserstack-build-1");
+//        caps.setCapability("build", "tests.tests.tests.browserstack-build-1");
 //        caps.setCapability("name", "first_test");
 //
 //
