@@ -38,7 +38,7 @@ public class SearchTests extends TestBase {
         step( "Search Carbon dioxide" ,() -> {
         $(accessibilityId("Search Wikipedia")).click();
         $(id("org.wikipedia.alpha:id/search_src_text")).sendKeys("CO2");
-        $("org.wikipedia.alpha:id/fragment_main_coordinator").find(byText("Carbon dioxide"));
+        $("org.wikipedia.alpha:id/page_list_item_title").find(byText("Carbon dioxide"));
                 //shouldHave(text("Carbon dioxide"));
                 //find(byText("Carbon dioxide"));
             //org.wikipedia.alpha:id/fragment_main_coordinator
