@@ -2,25 +2,26 @@ package config;
 
 import org.aeonbits.owner.Config;
 
+@Config.Sources({"classpath:testing.properties"})
 public interface DriverConfig extends Config {
 
-    @Key("Browserstack")
+    @Key("BrowserstackUrl")
     @DefaultValue("http://hub.browserstack.com/wd/hub")
     String urlBrowserstack();
 
-    @Key("user")
+    @Key("BrowserstackUser")
     @DefaultValue("automationautoma_lxrP0g")
     String userBrowserstack();
 
-    @Key("key")
+    @Key("BrowserstackKey")
     @DefaultValue("6p7oVykLsdXn3zYAyhCD")
     String keyBrowserstack();
 
-    @Key("device")
+    @Key("deviceName")
     @DefaultValue("Google Pixel 3")
     String deviceBrowserstack();
 
-    @Key("osVersion")
+    @Key("platformVersion")
     @DefaultValue("9.0")
     String osVersionBrowserstack();
 }
