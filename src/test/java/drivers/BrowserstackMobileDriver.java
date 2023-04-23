@@ -49,7 +49,7 @@ public class BrowserstackMobileDriver implements WebDriverProvider {
         // and desired capabilities defined above
         try {
             return new RemoteWebDriver(
-                    new URL(config.urlBrowserstack()), mutableCapabilities);
+                    new URL(config.urlBrowserstack()), mutableCapabilities); //http://hub.browserstack.com/wd/hub
         } catch (MalformedURLException e) {
             throw new RuntimeException(e);
         }
