@@ -21,9 +21,6 @@ public class SearchTests extends TestBase {
             $(id("org.wikipedia.alpha:id/search_src_text")).sendKeys("java");
             $$(id("org.wikipedia.alpha:id/page_list_item_title")).shouldHave(sizeGreaterThan(0));
         });
-        //find(byText("java"));
-        // $$(id("org.wikipedia.alpha:id/page_list_item_title")).shouldHave(sizeGreaterThan(0));
-        //shouldHave(text("java"));
     }
 
     @Test
@@ -32,7 +29,6 @@ public class SearchTests extends TestBase {
             $(accessibilityId("Search Wikipedia")).click();
             $(id("org.wikipedia.alpha:id/search_src_text")).sendKeys("what is pi equal");
             $(id("org.wikipedia.alpha:id/page_list_item_title")).shouldHave(text("pi"));
-            //find(withText("3.14"));
         });
     }
 
@@ -42,10 +38,6 @@ public class SearchTests extends TestBase {
             $(accessibilityId("Search Wikipedia")).click();
             $(id("org.wikipedia.alpha:id/search_src_text")).sendKeys("CO2");
             $(id("org.wikipedia.alpha:id/page_list_item_title")).shouldHave(text("Carbon dioxide"));
-            //shouldHave(text("Carbon dioxide"));
-            //find(byText("Carbon dioxide"));
-            //org.wikipedia.alpha:id/fragment_main_coordinator
-            //	org.wikipedia.alpha:id/fragment_main_view_pager
         });
     }
 }
