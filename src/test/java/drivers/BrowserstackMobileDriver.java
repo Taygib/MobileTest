@@ -20,16 +20,15 @@ public class BrowserstackMobileDriver implements WebDriverProvider {
     public BrowserstackMobileDriver() {
         this.config = ConfigFactory.create(DriverConfig.class, System.getProperties());
     }
+
     @Nonnull
     @Override
     public WebDriver createDriver(@Nonnull Capabilities capabilities) {
-        // DesiredCapabilities capabilities = new DesiredCapabilities();
 
         MutableCapabilities mutableCapabilities = new MutableCapabilities();
         mutableCapabilities.merge(capabilities);
 
         // Set your access credentials
-        //mutableCapabilities.setCapability("browserstack.user", config.userBrowserstack());
         mutableCapabilities.setCapability("browserstack.user", config.userBrowserstack());
         mutableCapabilities.setCapability("browserstack.key", config.keyBrowserstack());
 
@@ -49,7 +48,7 @@ public class BrowserstackMobileDriver implements WebDriverProvider {
         // and desired capabilities defined above
         try {
             return new RemoteWebDriver(
-                    new URL(config.urlBrowserstack()), mutableCapabilities); //http://hub.browserstack.com/wd/hub
+                    new URL(config.urlBrowserstack()), mutableCapabilities);
         } catch (MalformedURLException e) {
             throw new RuntimeException(e);
         }
